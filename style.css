@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'MeyouBold';
+    src: url('font/MeyouBold.ttf') format('truetype');
+  }
+  
+  body, html {
+    background-color: #E69674;
+    height: 100%
+  }
+  body,h1,h2,h3,h4,h5,h6 {font-family: "MeyouBold", sans-serif}
+  
+ 
+
+  .bgimg {
+    
+    
+    background-size: cover;
+    
+    background-image: url("pic/main.png");
+    min-height: 100vh; 
+    
+  }
+  /* #8AAEC9 
+    #EA7B6B
+    #F7CDC6
+    #F9E799*/
+  .w3-bar {
+    font-size: 1.5vw;
+    background-color: #F7CDC6; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+    
+    text-decoration: none;
+}
+  .button {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+  .button:hover {
+    background-color: #8AAEC9; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+    
+}
+
+  img {
+    max-width: 20%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing around the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  /* Style the left-floated image */
+.left-image {
+    float: left;
+    margin-right: 10%; /* Adjust the spacing between image and text as needed */
+  }
+  
+  /* Style the container to clear the float and prevent overlapping */
+  .lesson-content {
+    overflow: hidden; /* Clear the float */
+    
+  }
+  
+.lesson-text {
+  font-size: 1vw;  /* Set the desired font size in pixels */
+    color: #8e8b8b;
+} 
+.text-h {
+    font-size: 1vw; /* Set the desired font size in pixels */
+    color: #000000;
+    
+    } 
+.text-H {
+    font-size: 2vw; /* Set the desired font size in pixels */
+    color: #000000;
+    position: relative; /* or absolute, fixed, etc., based on your needs */
+    right: 0%;
+    } 
+.text-h:hover {
+      color: #8AAEC9 ; /* Change the text color on hover */
+      
+  }
+
+  .project-container {
+    background-color: #ffffff; /* สีพื้นหลังของกล่องสีขา */
+    /* border: 2px solid #ccc;  */
+    border-radius: 10px;
+    padding: 2%; /* ระยะห่างภายในกล่องสีขา */
+    margin: 5%; /* ระยะห่างรอบขอบกล่องสีขา */
+}
+.inputbox {
+  inp
+}

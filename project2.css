@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'MeyouBold';
+    src: url('font/MeyouBold.ttf') format('truetype');
+  }
+  
+  body, html {height: 100%}
+  body,h1,h2,h3,h4,h5,h6 {font-family: "MeyouBold", sans-serif}
+  .menu {display: none}
+  body {
+    background-color: #f5d0d6; /* สีพื้นหลังของเว็บเพจโดยรวม */
+    
+  }
+
+  
+  img {
+    max-width: 60%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing around the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  /* Style the left-floated image */
+.left-image {
+    float: left;
+    margin-right: 20px; /* Adjust the spacing between image and text as needed */
+  }
+  
+  /* Style the container to clear the float and prevent overlapping */
+  .lesson-content {
+    overflow: hidden; /* Clear the float */
+    
+  }
+  
+.lesson-text {
+  font-size: 1.5vw; /* Set the desired font size in pixels */
+    color: #6247b9;
+} 
+.lesson-text2 {
+  font-size: 1.5vw; /* Set the desired font size in pixels */
+  color: #5c5c73;
+  text-align: center; /* จัดการข้อความให้อยู่ตรงกลาง */
+}
+.lesson-text3 {
+  font-size: 1.5vw; /* Set the desired font size in pixels */
+  color: #6247b9;
+}
+
+.text-h {
+    font-size: 1.5vw; /* Set the desired font size in pixels */
+    color: #000000;
+    
+    } 
+.text-h1 {
+  font-size: 1.5vw; /* Set the desired font size in pixels */
+  color: #5c5c73;
+  
+  } 
+.text-H {
+    font-size: 2.5vw; /* Set the desired font size in pixels */
+    color: #000000;
+    position: relative; /* or absolute, fixed, etc., based on your needs */
+    text-align: center;
+    } 
+  .text {
+    font-size: 1.5vw;/* Set the desired font size in pixels */
+    color: #000000 ;
+    text-align: center;
+  }
+  
+
+/*1*/
+  .solutionContent {
+    display: none;
+  }
+  
+  /* สำหรับปุ่มการเปิด/ปิด */
+  #solutionToggle {
+    font-size: 1.5vw;
+    cursor: pointer;
+    color: #6a72e4;
+    font-weight: bold;
+    
+  }
+  
+  /* เปลี่ยนสีข้อความเมื่อคลิก */
+  #solutionToggle.clicked {
+    color: #ff0000; /* สีแดงหากคลิกแล้ว */
+  }
+
+  #solutionToggle:hover {
+    color: #F9E799; /* สีแดงหากคลิกแล้ว */
+  }
+
+/*2*/
+  .solutionContent2 {
+    display: none;
+  }
+  
+  /* สำหรับปุ่มการเปิด/ปิด */
+  #solutionToggle2 {
+    font-size: 1.5vw;
+    cursor: pointer;
+    color: #6a72e4;
+    font-weight: bold;
+  }
+  
+  /* เปลี่ยนสีข้อความเมื่อคลิก */
+  #solutionToggle2.clicked {
+    color: #ff0000; /* สีแดงหากคลิกแล้ว */
+  }
+  #solutionToggle2:hover {
+    color: #F9E799; /* สีแดงหากคลิกแล้ว */
+  }
+
+/*3*/
+  /* เริ่มต้นด้วยการซ่อนเนื้อหา */
+.solutionContent3 {
+  display: none;
+}
+
+/* สำหรับปุ่มการเปิด/ปิด */
+#solutionToggle3 {
+  font-size: 1.5vw;
+  cursor: pointer;
+  color: #6a72e4;
+  font-weight: bold;
+}
+
+/* เปลี่ยนสีข้อความเมื่อคลิก */
+#solutionToggle3.clicked {
+  color: #ff0000; /* สีแดงหากคลิกแล้ว */
+}
+
+#solutionToggle3:hover {
+  color: #F9E799; /* สีแดงหากคลิกแล้ว */
+}
+/*4*/
+  /* เริ่มต้นด้วยการซ่อนเนื้อหา */
+  .solutionContent4 {
+    display: none;
+  }
+  
+  /* สำหรับปุ่มการเปิด/ปิด */
+  #solutionToggle4 {
+    font-size: 1.5vw;
+    cursor: pointer;
+    color: #6a72e4;
+    font-weight: bold;
+  }
+  
+  /* เปลี่ยนสีข้อความเมื่อคลิก */
+  #solutionToggle4.clicked {
+    color: #ff0000; /* สีแดงหากคลิกแล้ว */
+  }
+  
+  #solutionToggle4:hover {
+    color: #F9E799; /* สีแดงหากคลิกแล้ว */
+  }
+  
+  .project-container {
+    background-color: #ffffff; /* สีพื้นหลังของกล่องสีขา */
+    /* border: 2px solid #ccc;  */
+    border-radius: 10px;
+    padding: 5%; /* ระยะห่างภายในกล่องสีขา */
+    margin: 5%; /* ระยะห่างรอบขอบกล่องสีขา */
+}

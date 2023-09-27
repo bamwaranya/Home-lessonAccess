@@ -131,56 +131,7 @@
     <br>
 </div>
     <!-- Contact -->
-       <h1 class = "text-H">การสนทนา</h1>
-    
-      <!-- สร้างกล่องสำหรับการแสดงข้อความ -->
-      <div class="text" id="chat-box" style="border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: scroll;"></div>
-    
-      <!-- สร้างช่องให้ผู้ใช้พิมพ์ข้อความ -->
-      <input class="text" type="text" id="message-input" placeholder="พิมพ์ข้อความของคุณ...">
       
-      <!-- สร้างปุ่มสำหรับการส่งข้อความ -->
-      <button onclick="sendMessage()" class="text" >ส่ง</button>
-    
-      <!-- สร้างช่องให้ผู้ใช้ตั้งชื่อ -->
-      <input type="text" class="text" id="name-input" placeholder="ชื่อของคุณ...">
-      <button onclick="setName()" class="text" >ตั้งชื่อ</button>
-    
-      <script>
-          let username = localStorage.getItem('username') || ''; // อ่านชื่อผู้ใช้จาก Local Storage
-          let chatData = JSON.parse(localStorage.getItem('chatData')) || []; // อ่านข้อมูลข้อความจาก Local Storage
-    
-          function setName() {
-              const nameInput = document.getElementById('name-input');
-              username = nameInput.value;
-              nameInput.disabled = true; // ปิดใช้งานช่องให้ตั้งชื่อ
-              localStorage.setItem('username', username); // เก็บชื่อผู้ใช้ใน Local Storage
-          }
-    
-          function sendMessage() {
-              const messageInput = document.getElementById('message-input');
-              const message = messageInput.value;
-    
-              if (!username) {
-                  alert('กรุณาตั้งชื่อของคุณก่อน');
-                  return;
-              }
-    
-              chatData.push(`${username}: ${message}`); // เก็บข้อมูลข้อความ
-              localStorage.setItem('chatData', JSON.stringify(chatData)); // เก็บข้อมูลข้อความใน Local Storage
-              displayMessages(); // แสดงข้อความทั้งหมด
-              messageInput.value = '';
-          }
-    
-          function displayMessages() {
-              const chatBox = document.getElementById('chat-box');
-              chatBox.innerHTML = chatData.map((message, index) => `<p>${index + 1}. ${message}</p>`).join('');
-          }
-    
-          // เรียกใช้ฟังก์ชันเพื่อแสดงข้อมูลที่เคยเก็บเมื่อโหลดหน้าเว็บ
-          displayMessages();
-      </script>
-
 
 
     </body>
